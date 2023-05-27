@@ -25,7 +25,6 @@ https://github.com/fastify/fastify
 
    Fastify は型定義がされているため、TypeScript を書く上でも困らない。
    Express は主に ES6[^3]以前の JavaScript で書かれており、TypeScript を使う際に any 型が生成されてしまい、うまく作動しない。
-   <br>
    [^3]:ES6
    ES6(ES2015)とは 2015 年 6 月に発行された、ECMASCript の 6th Edition のこと。 ES6(ES2015)から多くの機能や構文が追加され、JavaScript でのプログラムがより効率よく書きやすくなった。
 
