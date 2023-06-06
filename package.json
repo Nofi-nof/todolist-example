@@ -1,0 +1,14 @@
+{
+  "name": "todo-example",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "repository": "https://github.com/Nofi-nof/todolist-example.git",
+  "author": "Nofi-nof",
+  "license": "unlicense",
+  "dependencies": {
+    "fastify": "^4.17.0"
+  }
+}
