@@ -2,13 +2,18 @@
   "name": "todo-example",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node src/server.js",
+    "test": "vitest run"
   },
   "repository": "https://github.com/Nofi-nof/todolist-example.git",
   "author": "Nofi-nof",
   "license": "unlicense",
   "dependencies": {
     "fastify": "^4.17.0"
+  },
+  "devDependencies": {
+    "vitest": "^0.31.4"
   }
 }
