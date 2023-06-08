@@ -25,6 +25,12 @@
 - yarn から pnpm に移行した時の話 https://zenn.dev/mihorin1729/articles/8f4a966b01f93e
 - pnpm/インストール https://pnpm.io/ja/installation
 
+###### 自動テスト(unit テスト)
+
+- vitest/Getting Started https://vitest.dev/guide/
+- fastify/document/test https://www.fastify.io/docs/latest/Guides/Testing/
+- github/vitest-dev/vitest https://github.com/vitest-dev/vitest/blob/main/examples/fastify/test/app.test.ts
+
 ###### その他
 
 - CommonJS と ES Modules についてまとめる https://zenn.dev/yodaka/articles/596f441acf1cf3
