@@ -31,6 +31,11 @@
 - fastify/document/test https://www.fastify.io/docs/latest/Guides/Testing/
 - github/vitest-dev/vitest https://github.com/vitest-dev/vitest/blob/main/examples/fastify/test/app.test.ts
 
+###### github actions
+
+- GitHub Actions を用いた自動テストの実行と結果集計 https://qiita.com/vZke/items/868eb9fd5289d2a25660
+- github/apple-yagi/nextjs-app-router-practice https://github.com/apple-yagi/nextjs-app-router-practice/blob/main/.github/workflows/ci.yaml
+
 ###### その他
 
 - CommonJS と ES Modules についてまとめる https://zenn.dev/yodaka/articles/596f441acf1cf3

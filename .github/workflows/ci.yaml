@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Cache
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-node-modules-cache-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install deps
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: pnpm install --frozen-lock
+
+      - name: test
+        run: pnpm run test
