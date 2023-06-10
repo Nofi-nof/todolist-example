@@ -24,12 +24,18 @@ jobs:
         id: cache
         uses: actions/cache@v3
         with:
-          path: '**/node_modules'
+          path: "**/node_modules"
           key: ${{ runner.os }}-node-modules-cache-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install deps
         if: steps.cache.outputs.cache-hit != 'true'
         run: pnpm install --frozen-lock
+
+      - name: format
+        run: pnpm format:check
+
+      - name: lint
+        run: pnpm lint
 
       - name: test
         run: pnpm run test
