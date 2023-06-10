@@ -1,16 +1,16 @@
-import { afterAll, expect, test } from 'vitest'
-import { app } from './app.js'
+import { afterAll, expect, test } from "vitest";
+import { app } from "./app.js";
 
-test('Hello Worldが返却されること', async () => {
+test("Hello Worldが返却されること", async () => {
   const response = await app.inject({
-    method: 'GET',
-    url: '/',
-  })
+    method: "GET",
+    url: "/"
+  });
 
-  expect(response.statusCode).toBe(200)
-  expect(response.payload).toBe('hello world')
-})
+  expect(response.statusCode).toBe(200);
+  expect(response.payload).toBe("hello world");
+});
 
 afterAll(async () => {
-  await app.close()
-})
+  await app.close();
+});

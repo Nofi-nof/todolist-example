@@ -28,13 +28,20 @@
 ###### 自動テスト(unit テスト)
 
 - vitest/Getting Started https://vitest.dev/guide/
-- fastify/document/test https://www.fastify.io/docs/latest/Guides/Testing/
+- fastify/document/testing https://www.fastify.io/docs/latest/Guides/Testing/
 - github/vitest-dev/vitest https://github.com/vitest-dev/vitest/blob/main/examples/fastify/test/app.test.ts
 
 ###### github actions
 
 - GitHub Actions を用いた自動テストの実行と結果集計 https://qiita.com/vZke/items/868eb9fd5289d2a25660
-- github/apple-yagi/nextjs-app-router-practice https://github.com/apple-yagi/nextjs-app-router-practice/blob/main/.github/workflows/ci.yaml
+- GitHub/apple-yagi/nextjs-app-router-practice https://github.com/apple-yagi/nextjs-app-router-practice/blob/main/.github/workflows/ci.yaml
+- GitHub actions/checkout https://github.com/actions/checkout/tags
+
+###### ESlint,prettier
+
+- ESLint と Prettier、いい加減ちゃんと使えるようになろ。 https://zenn.dev/crsc1206/articles/d92548257fb445#eslint%E3%81%A8prettier%E3%81%A8%E4%BD%B5%E7%94%A8%E3%81%99%E3%82%8B
+- ESlint/Quick start https://eslint.org/docs/latest/use/getting-started
+- prettier/--write --check https://prettier.io/docs/en/cli.html
 
 ###### その他
 
