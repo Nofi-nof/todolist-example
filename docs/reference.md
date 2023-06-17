@@ -43,6 +43,11 @@
 - ESlint/Quick start https://eslint.org/docs/latest/use/getting-started
 - prettier/--write --check https://prettier.io/docs/en/cli.html
 
+###### TypeScript
+
+- GitHub/hmake98/fastify-typescript https://github.com/hmake98/fastify-typescript/blob/main/tsconfig.json
+- ts-node と ts-node-dev の違い https://qiita.com/sa9ra4ma/items/67ab5ac6fea3e5f065b0
+
 ###### その他
 
 - CommonJS と ES Modules についてまとめる https://zenn.dev/yodaka/articles/596f441acf1cf3
