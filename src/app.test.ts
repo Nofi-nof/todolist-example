@@ -1,5 +1,5 @@
 import { afterAll, expect, test } from "vitest";
-import { app } from "./app.js";
+import { app } from "./app";
 
 test("Hello Worldが返却されること", async () => {
   const response = await app.inject({

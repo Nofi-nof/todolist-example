@@ -1,10 +1,10 @@
 {
   "name": "todo-example",
   "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "node src/server.js",
+    "dev": "tsc -p tsconfig.json && node dist/server.js",
+    "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "format": "prettier --write src",
     "format:check": "prettier --check src",
@@ -14,18 +14,18 @@
   "author": "Nofi-nof",
   "license": "unlicense",
   "dependencies": {
-    "fastify": "^4.17.0"
+    "fastify": "4.17.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "eslint": "^8.42.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-config-standard-with-typescript": "^35.0.0",
-    "eslint-plugin-import": "^2.25.2",
+    "@typescript-eslint/eslint-plugin": "5.59.11",
+    "eslint": "8.43.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard-with-typescript": "35.0.0",
+    "eslint-plugin-import": "2.27.5",
     "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "prettier": "^2.8.8",
-    "typescript": "*",
-    "vitest": "^0.31.4"
+    "eslint-plugin-promise": "6.1.1",
+    "prettier": "2.8.8",
+    "typescript": "5.0.4",
+    "vitest": "0.32.2"
   }
 }
